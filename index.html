@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <h1>To-Do List</h1>
+                <i class="fa-solid fa-list-check"></i>
+                <i id="trash" class="fa-solid fa-trash" title="Clear all"></i>
+                <i id="moon" class="fa-solid fa-moon" title="Dark mode"></i>
+                <i id="sun" class="fa-solid fa-sun" title="Light mode"></i>
+            </div>
+            <div class="addTask">
+                <input type="text" name="text" id="add" placeholder="Add Item" maxlength="50">
+                <i id="addBtn" class="fa-solid fa-plus" title="Add tasks button"></i>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
